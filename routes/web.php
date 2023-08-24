@@ -58,6 +58,7 @@ Route::get('/editBibliography', [BibliographyController::class, 'index'])->name(
 Route::post('bibliographie/update/{id}', [BibliographyController::class, "update"])->name('bibliographie.update')->middleware('auth');
 
 Route::get('/contacts', [ContactController::class, 'index'])->name("contacts");
+Route::get('/allContacts', [ContactController::class, 'allContact'])->name("allContact");
 Route::post('/addContacts', [ContactController::class, 'store'])->name("addContact");
 
 require __DIR__.'/auth.php';

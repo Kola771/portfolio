@@ -58,7 +58,7 @@ import axios from "axios";
                                         Total Sms
                                     </div>
                                     <div>
-                                        500
+                                        {{ allContact.length }}
                                     </div>
                                 </div>
                                 <div class=" flex items-center flex-none text-white">
@@ -262,6 +262,7 @@ export default {
     data() {
         return {
             allProject: [],
+            allContact: [],
             show: false,
             asset: "",
             projet: "",
@@ -310,6 +311,12 @@ export default {
         recupProjects() {
             axios.get(route("allProject")).then(response => {
                 this.allProject = response.data;
+            })
+        },
+
+        recupContact() {
+            axios.get(route("allContact")).then(response => {
+                this.allContact = response.data;
             })
         }
     },
