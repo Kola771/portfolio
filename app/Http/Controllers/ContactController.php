@@ -16,18 +16,53 @@ class ContactController extends Controller
         return Inertia::render('Contacts', []);
     }
 
+    public function vueIndex()
+    {
+        $allContacts = Contact::orderBy('created_at', 'desc')
+        ->get()
+        ->transform(fn($contact) => [
+            "id" => Crypt::encryptString($contact->id),
+            "flname" => $contact->flname,
+            "email" => $contact->email,
+            "subject" => $contact->subject,
+            "message" => $contact->message,
+            "created_at" => $contact->created_at,
+        ]);
+        return Inertia::render('Admin/Contacts/Index', ["allContacts" => $allContacts]);
+    }
+
+    public function oneContact(Request $request)
+    {
+        try {
+            $id = Crypt::decryptString($request->id);
+            $oneContact = Contact::where("id", $id)
+            ->get()
+            ->transform(fn($contact) => [
+                "id" => Crypt::encryptString($contact->id),
+                "flname" => $contact->flname,
+                "email" => $contact->email,
+                "subject" => $contact->subject,
+                "message" => $contact->message,
+                "created_at" => $contact->created_at,
+            ]);
+            return json_encode(["result" => $oneContact[0]]);
+        } catch (\Throwable $th) {
+            return json_encode(["error" => $th]);
+        }
+    }
+
     // Récupération de tout les messages
     public function allContact()
     {
         $allContacts = Contact::orderBy('created_at', 'desc')
         ->get()
-        ->transform(fn($project) => [
-            "id" => Crypt::encryptString($project->id),
-            "flname" => $project->flname,
-            "email" => $project->email,
-            "subject" => $project->subject,
-            "message" => $project->message,
-            "created_at" => $project->created_at,
+        ->transform(fn($contact) => [
+            "id" => Crypt::encryptString($contact->id),
+            "flname" => $contact->flname,
+            "email" => $contact->email,
+            "subject" => $contact->subject,
+            "message" => $contact->message,
+            "created_at" => $contact->created_at,
         ]);
 
         return json_encode($allContacts);

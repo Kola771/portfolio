@@ -19,10 +19,9 @@ import axios from "axios";
                                 <div
                                     class="flex text-indigo-500 dark:text-white items-center justify-center bg-white dark:bg-[#0F172A] p-2 rounded-md flex-none w-8 h-8 md:w-12 md:h-12 ">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        strokeWidth={1.5} stroke="currentColor"
-                                        class="object-scale-down transition duration-500">
-                                        <path strokeLinecap="round" strokeLinejoin="round"
-                                            d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" />
                                     </svg>
                                 </div>
                                 <div class="flex flex-col justify-around flex-grow ml-5 text-white">
@@ -42,34 +41,35 @@ import axios from "axios";
                                 </div>
                             </div>
                         </div>
-                        <div class="w-full md:w-1/2 lg:w-1/3 p-2 ">
-                            <div
-                                class="flex items-center flex-row w-full bg-gradient-to-r dark:from-[#FFA500] dark:to-blue-500 from-indigo-500 via-purple-500 to-pink-500 rounded-md p-3">
+                        <Link :href="route('vueContacts')" class="w-full md:w-1/2 lg:w-1/3 p-2 ">
+                            <div>
                                 <div
-                                    class="flex text-indigo-500 dark:text-white justify-center items-center bg-white dark:bg-[#0F172A] p-2 rounded-md flex-none w-8 h-8 md:w-12 md:h-12 ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
-                                    </svg>
-                                </div>
-                                <div class="flex flex-col justify-around flex-grow ml-5 text-white">
-                                    <div class="text-xs whitespace-nowrap">
-                                        Total Sms
+                                    class="flex items-center flex-row w-full bg-gradient-to-r dark:from-[#FFA500] dark:to-blue-500 from-indigo-500 via-purple-500 to-pink-500 rounded-md p-3">
+                                    <div
+                                        class="flex text-indigo-500 dark:text-white justify-center items-center bg-white dark:bg-[#0F172A] p-2 rounded-md flex-none w-8 h-8 md:w-12 md:h-12 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                                        </svg>
                                     </div>
-                                    <div>
-                                        {{ allContact.length }}
+                                    <div class="flex flex-col justify-around flex-grow ml-5 text-white">
+                                        <div class="text-xs whitespace-nowrap">
+                                            Total Sms
+                                        </div>
+                                        <div>
+                                            {{ allContact.length }}
+                                        </div>
                                     </div>
-                                </div>
-                                <div class=" flex items-center flex-none text-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        strokeWidth={1.5} stroke="currentColor" class="w-6 h-6">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                                    </svg>
-
+                                    <div class=" flex items-center flex-none text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            strokeWidth={1.5} stroke="currentColor" class="w-6 h-6">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                         <div class="w-full md:w-1/2 lg:w-1/3 p-2 ">
                             <div
                                 class="flex items-center flex-row w-full bg-gradient-to-r dark:from-[#FFA500] dark:to-blue-500 from-indigo-500 via-purple-500 to-pink-500 rounded-md p-3">
@@ -87,7 +87,8 @@ import axios from "axios";
                                         Bibliographie
                                     </div>
                                     <div>
-                                        <Link :href="route('bibliographie.editBibliography')">Changer sa bibliographie</Link>
+                                        <Link :href="route('bibliographie.editBibliography')">Changer sa bibliographie
+                                        </Link>
                                     </div>
                                 </div>
                                 <div class=" flex items-center flex-none text-white">
@@ -114,9 +115,12 @@ import axios from "axios";
                                 </svg>
                             </span>
 
-                            <input type="text" placeholder="Recherchez un projet" v-model="inputValue" @input="search(inputValue)"
+                            <input type="text" placeholder="Recherchez un projet" v-model="inputValue"
+                                @input="search(inputValue)"
                                 class="block basis-[85%] py-1.5 pr-5 text-gray-700 bg-white border border-gray-200 rounded-lg md:w-80 placeholder-gray-400/70 pl-11 rtl:pr-11 rtl:pl-5 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40">
-                            <Link :href="route('addVue')" class="text-center bg-[#FFA500] p-1.5 text-white basis-[14%] rounded">Ajouter un projet</Link>
+                            <Link :href="route('addVue')"
+                                class="text-center bg-[#FFA500] p-1.5 text-white basis-[14%] rounded">Ajouter un projet
+                            </Link>
                         </div>
                     </div>
                     <div class="flex flex-col mt-6">
@@ -214,7 +218,7 @@ import axios from "axios";
                 </div>
             </div>
         </div>
-        
+
         <div class="relative flex justify-center items-center" v-if="show == true" @click="closeShow">
             <div id="menu" class="w-full h-full bg-gray-900 bg-opacity-80 top-0 fixed sticky-0" @click="closeShow">
             </div>
@@ -272,9 +276,10 @@ export default {
     },
     mounted() {
         this.recupProjects();
+        this.recupContact();
     },
     methods: {
-        search(valeur){
+        search(valeur) {
             axios.post(route('project.searchProject'), {
                 value: valeur
             }).then(response => {

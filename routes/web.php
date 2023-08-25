@@ -58,6 +58,8 @@ Route::get('/editBibliography', [BibliographyController::class, 'index'])->name(
 Route::post('bibliographie/update/{id}', [BibliographyController::class, "update"])->name('bibliographie.update')->middleware('auth');
 
 Route::get('/contacts', [ContactController::class, 'index'])->name("contacts");
+Route::get('contacts/vueIndex', [ContactController::class, 'vueIndex'])->name("vueContacts");
+Route::post('contacts/oneContact', [ContactController::class, 'oneContact'])->name("oneContact");
 Route::get('/allContacts', [ContactController::class, 'allContact'])->name("allContact");
 Route::post('/addContacts', [ContactController::class, 'store'])->name("addContact");
 
