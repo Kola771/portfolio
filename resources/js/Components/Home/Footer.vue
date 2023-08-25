@@ -22,7 +22,7 @@ defineProps({
 <template>
     <Head title="Bienvenu(e) sur mon Portfolio" />
     <footer class="bg-[#000000] p-4">
-        <div class="w-[80rem] p-6 m-auto">
+        <div class="lg:w-[80rem] lg:p-6 lg:m-auto">
             <h2 class="text-[#FFA500] font-bold text-[20px]">MyFolio/Réseaux sociaux :</h2>
             <p class="my-5 text-white">Vous pouvez également me retrouver sur mes différents réseaux sociaux :</p>
             <p class="my-5 text-white p-2 flex gap-3">
