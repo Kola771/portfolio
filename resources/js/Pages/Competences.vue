@@ -24,7 +24,7 @@ defineProps({
 <template>
     <Head title="Mes différents compétences" />
     <Header></Header>
-    <div class="h-[680px] bg-[url('/storage/myassets/two.jpg')] bg-no-repeat bg-cover relative flex flex-col">
+    <div class="h-[680px] bg-[url('/storage/myassets/two.jpg')] bg-no-repeat bg-cover relative flex flex-col md:w-full">
         <div class="flex justify-center w-full mt-[10rem] text-white">
             <div class="w-[75rem] m-auto flex justify-center">
                 <p class="mt-[170px] text-[90px] font-normal font-thin testDesc text-center uppercase leading-[96px]">
@@ -43,7 +43,7 @@ defineProps({
                     l'expérience dans la création de solutions à travers divers langages de programmation, tant au niveau du
                     backend que du frontend. Voici la liste de ces langages que je partagerai ci-dessous.
                 </div>
-                <div class="flex gap-8">
+                <div class="flex gap-8 flex-col justify-center lg:flex-row">
                     <div class="max-w-md py-4 px-8 bg-white shadow-2xl rounded-lg my-20 w-[500px] h-[320px]">
                         <div class="flex justify-center md:justify-end -mt-16">
                             <img class="w-20 h-20 object-cover rounded-full border-[3px] border-indigo-500" src="/storage/myassets/frontend.jpg" alt="image">

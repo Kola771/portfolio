@@ -25,7 +25,7 @@ defineProps({
         <div class="lg:w-[80rem] lg:p-6 lg:m-auto">
             <h2 class="text-[#FFA500] font-bold text-[20px]">MyFolio/Réseaux sociaux :</h2>
             <p class="my-5 text-white">Vous pouvez également me retrouver sur mes différents réseaux sociaux :</p>
-            <p class="my-5 text-white p-2 flex gap-3">
+            <p class="my-5 text-white p-2 flex flex-wrap gap-3">
                 <a class="rounded-full w-[140px] relative" href="https://github.com/Kola771" target="blank">
                     <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1"
                         data-view-component="true" class="octicon octicon-mark-github v-align-middle color-fg-default rounded-full w-[60px] h-[60px] border-2 border-[#FFA500] bg-white">
