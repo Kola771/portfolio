@@ -53,7 +53,7 @@ const images = (image) => {
 
     <AuthenticatedLayout>
         <div class="py-12 content">
-            <div class="mt-[50px] max-w-[35%] mx-auto sm:px-6 lg:px-8 space-y-6">
+            <div class="mt-[50px] w-[80%] sm:w-[70%] md:w-[60%] lg:max-w-[35%] mx-auto sm:px-6 lg:px-8 space-y-6">
                 <!-- component -->
                 <div class='flex items-center justify-center from-teal-100 via-teal-300 to-teal-500'>
                     <div class='w-full px-10 py-8 bg-white rounded-lg shadow-xl'>

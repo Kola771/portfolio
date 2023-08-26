@@ -67,15 +67,15 @@ const images = (image) => {
 
     <AuthenticatedLayout>
         <div class="py-12 content">
-            <div class="mt-[50px] mx-auto sm:px-6 lg:px-8 space-y-6" style="width: 60%;">
+            <div class="mt-[50px] w-[80%] sm:w-[70%] md:w-[80%] lg:w-[60%] mx-auto sm:px-6 lg:px-8 space-y-6">
                 <!-- component -->
                 <div class='flex items-center justify-center from-teal-100 via-teal-300 to-teal-500'>
                     <div class='w-full px-10 py-8 bg-white rounded-lg shadow-xl'>
                         <div class='space-y-6'>
                             <p v-if="result" class="bg-[#519b5d] text-white p-1.5 opacity-85 rounded">{{ result }}</p>
                             <p v-if="error" class="bg-[#f00020] text-white p-1.5 opacity-80 rounded">{{ error }}</p>
-                            <form @submit.prevent="submit(image)" enctype="multipart/form-data" class="flex gap-8">
-                                <div style="flex-basis: 58%;">
+                            <form @submit.prevent="submit(image)" enctype="multipart/form-data" class="flex flex-col lg:flex-row gap-8">
+                                <div class="lg:basis-[58%]">
                                     <h2 class="text-2xl font-bold ">Modifier le contenu de votre bibliographie</h2>
                                     <p class="my-4 opacity-70">Remplissez correctement ce formulaire !!!</p>
                                     <hr class="my-3">
@@ -86,11 +86,11 @@ const images = (image) => {
                                         v-model="form.bibliographie" required>{{ form.bibliographie.replace("<br>", "") }}</textarea>
                                 </div>
 
-                                <div style="flex-basis: 42%">
+                                <div class="lg:basis-[42%]">
                                     <div class="flex flex-col gap-4 mb-6 rounded p-2 shadow-2xl">
                                         <label>Image actuelle de votre bibliographie :</label>
-                                        <img v-bind:src="`/storage/myassets/${form.image}`" class="w-full rounded"
-                                            alt="imageBibliographie" style="height: 300px">
+                                        <img v-bind:src="`/storage/myassets/${form.image}`" class="w-full rounded lg:h-[300px]"
+                                            alt="imageBibliographie">
                                     </div>
                                     <label for="file">Sélectionnez une image :</label>
                                     <input type="file" name="file" id="file" ref="image" @change="images(image)"

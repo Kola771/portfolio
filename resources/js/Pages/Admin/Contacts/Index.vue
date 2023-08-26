@@ -21,9 +21,9 @@ const props = defineProps({
 
     <AuthenticatedLayout>
         <div class="py-12 content">
-            <div class="mt-12 max-w-[60%] mx-auto sm:px-6 lg:px-8 space-y-6">
+            <div class="mt-12 w-[70%] md:w-[60%] mx-auto sm:px-6 lg:px-8 space-y-6">
 
-                <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
+                <div class="px-8 p-4 sm:p-8 bg-white shadow sm:rounded-lg">
                     <h2 class="text-[#333] font-bold text-[20px]">Liste des messages envoyés par les utilisateurs</h2>
                     <div class="flex flex-col mt-6">
                         <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -97,7 +97,7 @@ const props = defineProps({
         </div>
         <div v-if="show == true" class="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
             <div
-                class="w-96 md:w-[400px] bg-[#eee] relative flex flex-col justify-center items-center py-16 px-4 md:px-24 xl:py-4 xl:px-4 rounded-lg">
+                class="w-[100%] md:w-[400px] bg-[#eee] relative flex flex-col justify-center items-center py-8 px-6 sm:py-16 sm:px-4 md:px-24 xl:py-4 xl:px-4 rounded-lg">
                 <div class="flex justify-between w-full items-center">
                     <div class="flex items-center gap-4 w-full">
                         <div
