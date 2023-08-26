@@ -54,16 +54,16 @@ defineProps({
         </svg>
         <div v-if="show" class="mt-[1rem] bg-[#eee] absolute right-0 lg:hidden md:hidden flex flex-col w-[150px] gap-0.5 p-1 rounded">
           <Link href="/#bibliographie"
-            class="p-1 font-bold md:text-[14px] lg:text-lg hover:text-[#FFA500] text-[#333] ease-in duration-300">Ma
+            class="p-1 font-bold md:text-[14px] border-b-[2px] border-[#333] lg:text-lg hover:text-[#FFA500] text-[#333] ease-in duration-300">Ma
           bibliographie</Link>
           <Link :href="route('competences')"
-            class="p-1 font-bold md:text-[14px] lg:text-lg hover:text-[#FFA500] text-[#333] ease-in duration-300">Mes
+            class="p-1 font-bold md:text-[14px] border-b-[2px] border-[#333] lg:text-lg hover:text-[#FFA500] text-[#333] ease-in duration-300">Mes
           compétences</Link>
           <Link :href="route('projects')"
-            class="p-1 font-bold md:text-[14px] lg:text-lg hover:text-[#FFA500] text-[#333] ease-in duration-300">Mes
+            class="p-1 font-bold md:text-[14px] border-b-[2px] border-[#333] lg:text-lg hover:text-[#FFA500] text-[#333] ease-in duration-300">Mes
           projets</Link>
           <Link :href="route('contacts')"
-            class="p-1 font-bold md:text-[14px] lg:text-lg hover:text-[#FFA500] text-[#333] ease-in duration-300">
+            class="p-1 font-bold md:text-[14px] border-b-[2px] border-[#333] lg:text-lg hover:text-[#FFA500] text-[#333] ease-in duration-300">
           Contact</Link>
           <Link v-if="$page.props.auth.user" :href="route('dashboard')"
             class="rounded font-bold md:text-[14px] hover:text-[#FFA500] lg:text-lg p-1 text-[#333] ease-in duration-300">

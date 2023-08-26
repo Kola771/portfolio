@@ -46,7 +46,7 @@ Route::get('/myprojects', [ProjectController::class, 'index'])->name("projects")
 Route::get('/addproject', [ProjectController::class, 'addVue'])->name("addVue")->middleware(['auth', 'verified']);
 
 Route::get('/allProject', [ProjectController::class, 'allProject'])->name("allProject")->middleware('auth');
-Route::get('/allProjectLimit', [ProjectController::class, 'allProjectLimit'])->name("allProjectLimit")->middleware('auth');
+Route::get('/allProjectLimit', [ProjectController::class, 'allProjectLimit'])->name("allProjectLimit");
 Route::get('project/edit/{id}', [ProjectController::class, 'edit'])->name("edit.project")->middleware('auth');
 Route::post('project/update/{id}', [ProjectController::class, "update"])->name('project.update')->middleware('auth');
 Route::post('/createproject', [ProjectController::class, 'store'])->name("project.store")->middleware('auth');

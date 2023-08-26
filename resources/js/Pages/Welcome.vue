@@ -46,7 +46,7 @@ defineProps({
     </div>
 
     <main>
-        <div class="my-[1.5rem] flex-wrap max-w-[95%] lg:my-[3rem] md:my-[2rem] md:max-w-[90%] lg:max-w-[80rem] lg:p-6 m-auto flex lg:gap-8"
+        <div class="my-[1.8rem] flex-wrap max-w-[90%] lg:my-[3rem] md:my-[2rem] md:max-w-[90%] lg:max-w-[80rem] lg:p-6 m-auto flex lg:gap-8"
             id="bibliographie">
             <div class="basis-full lg:basis-1/2">
                 <img v-bind:src="`/storage/myassets/${bibliography.image}`" alt="my_face" class="h-full">
@@ -59,7 +59,7 @@ defineProps({
                     directement via le
                     <Link class="text-[#FFA500] hover:text-[#333]" :href="route('contacts')">formulaire de contact</Link> !
                 </p>
-                <p class="mt-2 lg:mt-4 md:mt-3 flex justify-between">
+                <p class="mt-5 lg:mt-4 md:mt-3 flex justify-between">
                     <a class="bg-[#000000] text-white p-2.5 lg:p-4 text-center basis-[40%] font-serif ease-in duration-300 hover:bg-[#FFA500]"
                         href="#projects">Mes projets</a>
                     <a class="bg-[#000000] text-white p-2.5 lg:p-4 text-center basis-[40%] font-serif ease-in duration-300 hover:bg-[#FFA500]"
@@ -67,7 +67,7 @@ defineProps({
                 </p>
             </section>
         </div>
-        <div class="my-[1.5rem] max-w-[95%] lg:my-[3rem] lg:max-w-[80rem] md:my-[2rem] md:max-w-[90%] lg:p-6 m-auto flex lg:gap-8"
+        <div class="my-[1.5rem] max-w-[90%] lg:my-[3rem] lg:max-w-[80rem] md:my-[2rem] md:max-w-[90%] lg:p-6 m-auto flex lg:gap-8"
             id="projects">
             <section>
                 <h2 class="font-bold text-[2rem] lg:text-[3rem] mb-2">Mes projets</h2>

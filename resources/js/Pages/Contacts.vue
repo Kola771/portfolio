@@ -44,7 +44,7 @@ const sendData = () => {
     <div class="h-[680px] bg-[url('/storage/myassets/contact.jpg')] bg-no-repeat bg-cover relative flex flex-col">
         <div class="flex justify-center w-full mt-[10rem] text-white">
             <div class="w-[75rem] m-auto flex justify-center">
-                <p class="mt-[170px] text-[90px] font-normal font-thin text-gray-300 text-center uppercase leading-[96px]">
+                <p class="text-[30px] mt-[130px] md:text-[40px] md:mt-[9rem] lg:mt-[170px] lg:text-[90px] font-normal font-thin text-gray-300 text-center uppercase leading-[96px]">
                     Prendre contact
                 </p>
             </div>
@@ -52,10 +52,10 @@ const sendData = () => {
     </div>
 
     <main>
-        <div class="w-full max-w-[80rem] m-auto my-[8rem]">
-            <section class="flex justify-center items-center">
-                <h2 class="basis-1/2 text-[2.4rem] uppercase opacity-70">Entrons en communication ensemble !</h2>
-                <div class="basis-1/2 border-l-[3px] p-4 text-[17px] text-justify pl-8 font-serif">
+        <div class="w-[90%] lg:max-w-[80rem] m-auto my-[8rem]">
+            <section class="flex flex-wrap justify-center items-center">
+                <h2 class="basis-full md:basis-1/2 lg:basis-1/2 text-[1.8rem] md:text-[2.4rem] uppercase opacity-70">Entrons en communication ensemble !</h2>
+                <div class="basis-full md:basis-1/2 lg:basis-1/2 mt-4 md:mt-0 md:border-l-[3px] md:p-4 text-[17px] text-justify md:pl-8 font-serif">
                     Si vous avez l'intention de prendre contact, je vous encourage à compléter le formulaire ci-dessous. Je m'engage à vous fournir une réponse rapide dès que possible.
                 </div>
             </section>
