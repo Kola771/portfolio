@@ -26,10 +26,19 @@ const showingNavigationDropdown = ref(false);
                 <div class="flex-none h-full text-center flex items-center justify-center">
 
                     <div class="flex space-x-3 items-center px-3">
-                        <div class="flex-none flex justify-center">
+                        <div class="flex-none flex justify-center relative" @click="auclick">
                             <div class="w-10 h-10 flex">
                                 <img src="/storage/myassets/profile.jpg" alt="profile"
                                     class="shadow rounded-full object-cover border-[3px] border-[#FFA500]" />
+                            </div>
+                            <div v-if="show"
+                                class="mt-[1rem] bg-[#0F172A] absolute mt-[50px] sm:hidden right-0 flex flex-col w-[140px] gap-0.5 p-1 rounded border-[1px] shadow-2xl">
+                                <Link :href="route('profile.edit')"
+                                    class="p-1 font-bold md:text-[14px] border-b-[2px] border-[#333] text-white hover:text-[#333] hover:bg-[#ffffff] ease-in duration-300">
+                                    Voir son profil</Link>
+                                <DropdownLink :href="route('logout')" method="post" as="button" class="text-center font-bold text-white hover:text-[#333] ease-in duration-300">
+                                        Déconnexion
+                                </DropdownLink>
                             </div>
                         </div>
                         <div class="hidden sm:flex sm:items-center sm:ml-6">
@@ -143,7 +152,8 @@ const showingNavigationDropdown = ref(false);
                     </svg>
                     </Link>
                     <Link
-                        class="hover:ml-4 justify-end pr-5 text-white hover:text-purple-500 dark:hover:text-blue-500 w-full bg-[#1E293B] p-3 rounded-full transform ease-in-out duration-300 flex" :href="route('vueContacts')">
+                        class="hover:ml-4 justify-end pr-5 text-white hover:text-purple-500 dark:hover:text-blue-500 w-full bg-[#1E293B] p-3 rounded-full transform ease-in-out duration-300 flex"
+                        :href="route('vueContacts')">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-4 h-4">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -204,11 +214,22 @@ export default {
     },
     data() {
         return {
+            show: false,
+            x: 0,
         };
     },
     mounted() {
     },
     methods: {
+        auclick() {
+            if(this.x === 1) {
+              this.show = false;
+              this.x = 0;
+            } else {
+              this.show = true;
+              this.x++
+            }
+        },
         openNav() {
             const sidebar = document.querySelector("aside");
             const maxSidebar = document.querySelector(".max")

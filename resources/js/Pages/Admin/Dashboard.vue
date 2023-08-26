@@ -10,7 +10,7 @@ import axios from "axios";
 
     <AuthenticatedLayout>
         <div class="py-12 content">
-            <div class="mt-12 max-w-[60%] mx-auto sm:px-6 lg:px-8 space-y-6">
+            <div class="mt-12 w-[70%] md:max-w-[60%] mx-auto sm:px-6 lg:px-8 space-y-6">
                 <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
                     <div class="flex flex-wrap -mx-2">
                         <div class="w-full lg:w-1/3 p-2">
@@ -41,36 +41,36 @@ import axios from "axios";
                                 </div>
                             </div>
                         </div>
-                        <Link :href="route('vueContacts')" class="w-full md:w-1/2 lg:w-1/3 p-2 ">
-                            <div>
+                        <Link :href="route('vueContacts')" class="w-full lg:w-1/3 p-2 ">
+                        <div>
+                            <div
+                                class="flex items-center flex-row w-full bg-gradient-to-r dark:from-[#FFA500] dark:to-blue-500 from-indigo-500 via-purple-500 to-pink-500 rounded-md p-3">
                                 <div
-                                    class="flex items-center flex-row w-full bg-gradient-to-r dark:from-[#FFA500] dark:to-blue-500 from-indigo-500 via-purple-500 to-pink-500 rounded-md p-3">
-                                    <div
-                                        class="flex text-indigo-500 dark:text-white justify-center items-center bg-white dark:bg-[#0F172A] p-2 rounded-md flex-none w-8 h-8 md:w-12 md:h-12 ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
-                                        </svg>
+                                    class="flex text-indigo-500 dark:text-white justify-center items-center bg-white dark:bg-[#0F172A] p-2 rounded-md flex-none w-8 h-8 md:w-12 md:h-12 ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col justify-around flex-grow ml-5 text-white">
+                                    <div class="text-xs whitespace-nowrap">
+                                        Total Sms
                                     </div>
-                                    <div class="flex flex-col justify-around flex-grow ml-5 text-white">
-                                        <div class="text-xs whitespace-nowrap">
-                                            Total Sms
-                                        </div>
-                                        <div>
-                                            {{ allContact.length }}
-                                        </div>
-                                    </div>
-                                    <div class=" flex items-center flex-none text-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            strokeWidth={1.5} stroke="currentColor" class="w-6 h-6">
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                                        </svg>
+                                    <div>
+                                        {{ allContact.length }}
                                     </div>
                                 </div>
+                                <div class=" flex items-center flex-none text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        strokeWidth={1.5} stroke="currentColor" class="w-6 h-6">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                    </svg>
+                                </div>
                             </div>
+                        </div>
                         </Link>
-                        <div class="w-full md:w-1/2 lg:w-1/3 p-2 ">
+                        <div class="w-full lg:w-1/3 p-2 ">
                             <div
                                 class="flex items-center flex-row w-full bg-gradient-to-r dark:from-[#FFA500] dark:to-blue-500 from-indigo-500 via-purple-500 to-pink-500 rounded-md p-3">
                                 <div
@@ -106,8 +106,8 @@ import axios from "axios";
 
                 <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
                     <div class="w-full">
-                        <div class="flex items-center mt-4 md:mt-0 gap-x-4">
-                            <span class="absolute">
+                        <div class="flex flex-col gap-2 md:flex-row items-center mt-4 md:mt-0 md:gap-x-4">
+                            <span class="absolute hidden md:block">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                     stroke="currentColor" class="w-5 h-5 mx-3 text-gray-400 dark:text-gray-600">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -117,9 +117,16 @@ import axios from "axios";
 
                             <input type="text" placeholder="Recherchez un projet" v-model="inputValue"
                                 @input="search(inputValue)"
-                                class="block basis-[85%] py-1.5 pr-5 text-gray-700 bg-white border border-gray-200 rounded-lg md:w-80 placeholder-gray-400/70 pl-11 rtl:pr-11 rtl:pl-5 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40">
+                                class="w-full md:basis-[85%] py-1.5 pr-5 text-gray-700 bg-white border border-gray-200 rounded-lg placeholder-gray-400/70 pl-11 rtl:pr-11 rtl:pl-5 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40">
                             <Link :href="route('addVue')"
-                                class="text-center bg-[#FFA500] p-1.5 text-white basis-[14%] rounded">Ajouter un projet
+                                class="text-center bg-[#FFA500] p-1.5 text-white rounded hidden lg:flex">Ajouter un projet
+                            </Link>
+                            <Link :href="route('addVue')"
+                                class="flex justify-center text-center bg-[#0F172A] p-2.5 text-white w-full md:basis-[60%] rounded lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
                             </Link>
                         </div>
                     </div>
@@ -225,10 +232,10 @@ import axios from "axios";
         </div>
         <div v-if="show == true" class="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
             <div
-                class="w-96 md:w-auto bg-gray-800 relative flex flex-col justify-center items-center py-16 px-4 md:px-24 xl:py-24 xl:px-36">
+                class="mt-[150px] md:w-auto bg-gray-800 relative flex flex-col justify-center items-center px-8 py-10 sm:py-16 sm:px-4 md:px-24 xl:py-24 xl:px-36 md:mt-0">
                 <div role="banner">
                     <img v-bind:src="`/storage/projetImage/${asset}`" alt="imageprojet"
-                        class="rounded-full w-[220px] h-[220px] border-2">
+                        class="rounded-full w-[150px] h-[150px] sm:w-[220px] sm:h-[220px] border-2">
                 </div>
                 <div class="mt-12">
                     <h3 role="main"
@@ -241,7 +248,7 @@ import axios from "axios";
                         votre site !?</p>
                 </div>
                 <button @click="deleteProject(project_id)"
-                    class="w-full text-gray-800 hover:bg-gray-100 bg-white sm:w-auto mt-14 text-base leading-4 text-center py-6 px-16 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 ">Oui...supprimer</button>
+                    class="w-full text-gray-800 hover:bg-gray-100 bg-white sm:w-auto mt-14 text-base leading-4 text-center p-4 sm:py-6 sm:px-16 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 ">Oui...supprimer</button>
                 <button @click="closeShow"
                     class="mt-6 text-white hover:border-white text-base leading-none focus:outline-none focus:border-gray-800 border-b border-transparent text-center">Non...</button>
                 <button @click="closeShow"
