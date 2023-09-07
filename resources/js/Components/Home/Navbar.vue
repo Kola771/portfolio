@@ -21,7 +21,7 @@ defineProps({
 
 <template>
   <Head title="Bienvenu(e) sur mon Portfolio" />
-  <header class="fixed inset-x-0 top-0 z-50 bg-[#ffffff] bg-[url('/storage/myassets/six.jpg')] border-b-2">
+  <header class="fixed inset-x-0 top-0 z-50 bg-[#000000] border-b-2">
     <div class="flex p-2 justify-between lg:justify-between md:justify-between items-center lg:w-[80rem] lg:p-6 md:p-4 lg:m-auto">
       <h1 class="text-[20px] text-[#FFA500] font-bold">
         <Link href="/">MyFolio</Link>

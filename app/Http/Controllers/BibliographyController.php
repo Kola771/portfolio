@@ -21,8 +21,11 @@ class BibliographyController extends Controller
                 "bibliographie" => $bilbiograph->bibliographie,
                 "image" => $bilbiograph->image,
             ]);
-        $myBibliography = $bibligraphies[0];
-        return Inertia::render("Admin/Bibliography/Index", ["personnality" => $myBibliography]);
+            if(count($bibligraphies) > 0)
+            {
+                $myBibliography = $bibligraphies[0];
+                return Inertia::render("Admin/Bibliography/Index", ["personnality" => $myBibliography]);
+            }
     }
 
     // Récupération de la bibliographie

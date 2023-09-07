@@ -24,14 +24,14 @@ const sendData = () => {
             error.value = false;
             setTimeout(() => {
                 result.value = ''
-                Inertia.get('/')
+                window.location.href = "/"
             }, 1500)
         } else {
             error.value = response.data.error;
             result.value = false;
             setTimeout(() => {
                 error.value = ''
-                Inertia.get('/')
+                window.location.href = "/"
             }, 1500)
         }
     })
@@ -39,7 +39,7 @@ const sendData = () => {
 </script>
 
 <template>
-    <Head title="Mes différents projets" />
+    <Head title="Prendre contact" />
     <Header></Header>
     <div class="h-[680px] bg-[url('/storage/myassets/contact.jpg')] bg-no-repeat bg-cover relative flex flex-col">
         <div class="flex justify-center w-full mt-[10rem] text-white">
