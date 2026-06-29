@@ -13,11 +13,18 @@
         {{ t('hero.badge') }}
       </div>
 
-      <!-- Name -->
-      <h1 class="hero-title">
-        Koladé<br />
-        <span class="hero-acc">Aboudou</span>
-      </h1>
+      <!-- Name + Photo -->
+      <div class="name-photo">
+        <h1 class="hero-title">
+          Koladé<br />
+          <span class="hero-acc">Aboudou</span>
+        </h1>
+        <img
+          src="~/assets/images/kolade-aboudou.jpeg"
+          alt="Koladé Aboudou"
+          class="hero-photo"
+        />
+      </div>
 
       <!-- Typing -->
       <p class="hero-typing">
@@ -194,13 +201,30 @@ const chips = [
   50% { opacity: 0.4; transform: scale(0.8); }
 }
 
+.name-photo {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 0.6rem;
+  animation: fadeUp 0.7s 0.35s both;
+}
+
 .hero-title {
   font-size: clamp(36px, 6vw, 54px);
   font-weight: 500;
   line-height: 1.08;
   color: var(--txt);
-  margin-bottom: 0.6rem;
-  animation: fadeUp 0.7s 0.35s both;
+}
+
+.hero-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 1.5px solid var(--acc-border);
+  box-shadow: 0 0 0 4px var(--acc-bg);
+  flex-shrink: 0;
 }
 
 .hero-acc {
@@ -343,5 +367,7 @@ const chips = [
   .hero { padding: 3.5rem 1.25rem 2.5rem; }
   .hero-btns { flex-direction: column; }
   .btn-primary, .btn-secondary { text-align: center; justify-content: center; }
+  .name-photo { gap: 1.5rem; }
+  .hero-photo { width: 80px; height: 80px; }
 }
 </style>
