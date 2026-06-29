@@ -32,7 +32,7 @@
       <!-- CTAs -->
       <div class="hero-btns">
         <a href="#projects" class="btn-primary">{{ t('hero.btn_projects') }}</a>
-        <a :href="`/${t('hero.file_cv')}`" download class="btn-secondary">
+        <a :href="`/pdf/${t('hero.file_cv')}`" download class="btn-secondary">
           <Icon name="tabler:download" size="16" />
           {{ t('hero.btn_cv') }}
         </a>
