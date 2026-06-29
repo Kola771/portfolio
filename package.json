@@ -7,6 +7,9 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview"
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "devDependencies": {
     "@nuxtjs/color-mode": "^3.4.2",
     "@nuxtjs/i18n": "^10.4.0",
