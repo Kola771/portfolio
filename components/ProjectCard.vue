@@ -172,7 +172,7 @@ const statusLabel = computed(() => t(`projects.status.${props.project.status}`))
 }
 
 .card-links {
-  display: flex;
+  display: none;
   gap: 1rem;
 }
 
