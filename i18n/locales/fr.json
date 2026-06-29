@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contact": "Contact",
+    "cta": "Me contacter",
+    "theme_light": "Clair",
+    "theme_dark": "Sombre"
+  },
+  "footer": {
+    "text": "Conçu & développé par Koladé Moussè Aboudou · Cotonou, Bénin"
+  },
+  "hero": {
+    "badge": "Disponible en remote — monde entier",
+    "typing_prefix": "Je construis",
+    "words": ["des APIs robustes.", "des interfaces modernes.", "en TypeScript.", "du full stack.", "pour le remote."],
+    "desc": "Développeur Full Stack spécialisé TypeScript — APIs scalables avec NestJS, interfaces modernes avec Next.js et Nuxt 3. Basé à Cotonou, disponible partout dans le monde en remote.",
+    "btn_projects": "Voir mes projets",
+    "btn_cv": "Télécharger le CV",
+    "file_cv": "cv-kolade-aboudou-fr.pdf",
+    "stack_label": "Stack principale"
+  },
+  "about": {
+    "label": "À propos",
+    "title": "Qui suis-je ?",
+    "p1": "Développeur full stack passionné avec plus de 3 ans d'expérience, je suis à l'aise aussi bien sur le back-end (NestJS, Laravel) que sur le front-end (Next.js TSX, Nuxt 3 TS). TypeScript est devenu mon langage du quotidien.",
+    "p2": "Actuellement en Master Informatique de Gestion (2025–2026), je cherche à rejoindre des équipes internationales en full remote pour relever de nouveaux défis techniques ambitieux. La qualité du code, l'architecture propre et l'expérience utilisateur sont mes priorités.",
+    "p3": "Quand je ne code pas, je suis passionné de mangas, d'animés, de musique et j'explore de nouvelles technos pour rester à jour dans un écosystème qui évolue vite.",
+    "stats": [
+      { "value": "3+", "label": "Années d'expérience" },
+      { "value": "TS", "label": "Next · Nuxt · NestJS — stack principale" },
+      { "value": "100%", "label": "Remote-ready" }
+    ]
+  },
+  "experience": {
+    "label": "Expérience",
+    "title": "Parcours",
+    "mission_badge": "Mission client",
+    "items": [
+      {
+        "role": "Développeur Frontend",
+        "date": "19 Décembre 2025 – Aujourd'hui · Cotonou, Bénin (télétravail depuis les locaux Vipp)",
+        "desc": "Développement d'interfaces modernes avec Next.js et TypeScript (TSX). Intégration de composants réutilisables, optimisation des performances et collaboration avec les équipes produit."
+      },
+      {
+        "role": "Développeur Frontend",
+        "date": "19 Décembre 2025 – Aujourd'hui · Cotonou, Bénin (télétravail depuis les locaux Vipp)",
+        "desc": "Conception et développement de landing pages orientées conversion avec Next.js et TypeScript (TSX). Optimisation UX pour maximiser l'acquisition client et les ventes."
+      },
+      {
+        "role": "Développeur Frontend",
+        "date": "03 Décembre 2024 – 15 Décembre 2025 · Cotonou, Bénin (télétravail depuis les locaux Vipp)",
+        "desc": "Développement d'interfaces web avec React.js et TypeScript (TSX). Conception de composants UI, gestion de l'état et intégration d'APIs REST."
+      },
+      {
+        "role": "Développeur Full Stack",
+        "date": "Août 2022 – 02 Décembre 2024 · Cotonou, Bénin",
+        "desc": "Formation intensive en développement web (6 mois de bootcamp + 16 mois de stage pratique rémunéré). Stack : Laravel, Vue.js, Inertia.js, Node.js et Nuxt.js."
+      },
+      {
+        "role": "Stagiaire Développeur",
+        "date": "Fév. 2022 – Mai 2022",
+        "desc": "Découverte et contribution aux systèmes d'information institutionnels à grande échelle."
+      },
+      {
+        "role": "Master Informatique de Gestion à l'ENEAM — en cours",
+        "date": "+ Licence Système Informatique et Logiciel · LES COURS SONOU (2022)",
+        "desc": ""
+      }
+    ]
+  },
+  "skills": {
+    "label": "Compétences",
+    "title": "Technologies",
+    "sub": "Ce avec quoi je construis au quotidien"
+  },
+  "projects": {
+    "label": "Projets",
+    "title": "Ce que j'ai construit",
+    "sub": "Clones de vraies applis — code open source sur GitHub",
+    "status": {
+      "wip": "En cours",
+      "done": "Terminé",
+      "planned": "Planifié"
+    },
+    "demo": "Démo live",
+    "twitter-clone": {
+      "type": "Clone · Réseau social",
+      "description": "Feed temps réel, tweets, likes, retweets, profils utilisateurs et notifications. Authentification JWT complète avec refresh tokens."
+    },
+    "airbnb-clone": {
+      "type": "Clone · Location",
+      "description": "Recherche de logements avec filtres avancés, carte interactive Mapbox, système de réservation et paiements simulés."
+    },
+    "shopify-clone": {
+      "type": "Clone · E-commerce",
+      "description": "Catalogue produits, panier persistant, commandes, dashboard admin complet et intégration Stripe pour les paiements."
+    },
+    "perso": {
+      "type": "Projet perso",
+      "description": "Projet personnel en développement actif. Décris-le ici pour que les recruteurs voient ta vision et ta motivation."
+    }
+  },
+  "contact": {
+    "title": "Travaillons ensemble",
+    "sub1": "Disponible pour des missions remote, freelance ou CDI.",
+    "sub2": "Je réponds sous 24h."
+  }
+}

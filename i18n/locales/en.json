@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "cta": "Contact me",
+    "theme_light": "Light",
+    "theme_dark": "Dark"
+  },
+  "footer": {
+    "text": "Designed & developed by Koladé Moussè Aboudou · Cotonou, Benin"
+  },
+  "hero": {
+    "badge": "Available remote — worldwide",
+    "typing_prefix": "I build",
+    "words": ["robust APIs.", "modern interfaces.", "in TypeScript.", "full stack.", "for remote."],
+    "desc": "Full Stack developer specializing in TypeScript — scalable APIs with NestJS, modern interfaces with Next.js and Nuxt 3. Based in Cotonou, available worldwide remote.",
+    "btn_projects": "View my projects",
+    "btn_cv": "Download CV",
+    "file_cv": "cv-kolade-aboudou-en.pdf",
+    "stack_label": "Main stack"
+  },
+  "about": {
+    "label": "About",
+    "title": "Who am I?",
+    "p1": "Passionate full stack developer with 3+ years of experience, comfortable on both back-end (NestJS, Laravel) and front-end (Next.js TSX, Nuxt 3 TS). TypeScript has become my daily language.",
+    "p2": "Currently completing a Master's in Information Systems Management (2025–2026), I'm looking to join international teams in full remote to tackle ambitious technical challenges. Code quality, clean architecture and user experience are my priorities.",
+    "p3": "When I'm not coding, I'm passionate about mangas, animes, music and exploring new technologies to stay current in a fast-moving ecosystem.",
+    "stats": [
+      { "value": "3+", "label": "Years of experience" },
+      { "value": "TS", "label": "Next · Nuxt · NestJS — main stack" },
+      { "value": "100%", "label": "Remote-ready" }
+    ]
+  },
+  "experience": {
+    "label": "Experience",
+    "title": "Career",
+    "mission_badge": "Client mission",
+    "items": [
+      {
+        "role": "Frontend Developer",
+        "date": "December 19, 2025 – Present · Cotonou, Benin (remote from Vipp offices)",
+        "desc": "Development of modern interfaces with Next.js and TypeScript (TSX). Integration of reusable components, performance optimization and collaboration with product teams."
+      },
+      {
+        "role": "Frontend Developer",
+        "date": "December 19, 2025 – Present · Cotonou, Benin (remote from Vipp offices)",
+        "desc": "Design and development of conversion-focused landing pages with Next.js and TypeScript (TSX). UX optimization to maximize customer acquisition and sales."
+      },
+      {
+        "role": "Frontend Developer",
+        "date": "December 3, 2024 – December 15, 2025 · Cotonou, Benin (remote from Vipp offices)",
+        "desc": "Development of web interfaces with React.js and TypeScript (TSX). UI component design, state management and REST API integration."
+      },
+      {
+        "role": "Full Stack Developer",
+        "date": "August 2022 – December 2, 2024 · Cotonou, Benin",
+        "desc": "Intensive web development training (6-month bootcamp + 16 months paid internship). Stack: Laravel, Vue.js, Inertia.js, Node.js and Nuxt.js."
+      },
+      {
+        "role": "Developer Intern",
+        "date": "Feb. 2022 – May 2022",
+        "desc": "Discovery and contribution to large-scale institutional information systems."
+      },
+      {
+        "role": "Master's in Information Systems Management at ENEAM — in progress",
+        "date": "+ Bachelor's in Computer Systems and Software · LES COURS SONOU (2022)",
+        "desc": ""
+      }
+    ]
+  },
+  "skills": {
+    "label": "Skills",
+    "title": "Technologies",
+    "sub": "What I build with every day"
+  },
+  "projects": {
+    "label": "Projects",
+    "title": "What I've built",
+    "sub": "Real app clones — open source code on GitHub",
+    "status": {
+      "wip": "In progress",
+      "done": "Completed",
+      "planned": "Planned"
+    },
+    "demo": "Live demo",
+    "twitter-clone": {
+      "type": "Clone · Social network",
+      "description": "Real-time feed, tweets, likes, retweets, user profiles and notifications. Complete JWT authentication with refresh tokens."
+    },
+    "airbnb-clone": {
+      "type": "Clone · Rental",
+      "description": "Accommodation search with advanced filters, interactive Mapbox map, booking system and simulated payments."
+    },
+    "shopify-clone": {
+      "type": "Clone · E-commerce",
+      "description": "Product catalog, persistent cart, orders, complete admin dashboard and Stripe integration for payments."
+    },
+    "perso": {
+      "type": "Personal project",
+      "description": "Personal project in active development. Describe it here so recruiters can see your vision and motivation."
+    }
+  },
+  "contact": {
+    "title": "Let's work together",
+    "sub1": "Available for remote, freelance or full-time positions.",
+    "sub2": "I reply within 24h."
+  }
+}

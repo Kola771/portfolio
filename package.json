@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-kolade",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^3.4.2",
+    "@nuxtjs/i18n": "^10.4.0",
+    "@vueuse/nuxt": "^10.11.0",
+    "nuxt": "^3.12.0"
+  },
+  "dependencies": {
+    "@iconify-json/tabler": "^1.1.123",
+    "nuxt-icon": "^0.6.9"
+  }
+}
