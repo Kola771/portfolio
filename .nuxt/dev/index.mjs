@@ -2318,7 +2318,7 @@ var projects$3 = {
 	},
 	perso: {
 		type: "Projet perso",
-		description: "Projet personnel en développement actif. Décris-le ici pour que les recruteurs voient ta vision et ta motivation."
+		description: "Projet personnel en développement actif. Ce sera une plateforme numérique dédiée à la valorisation de la littérature africaine et des histoires inspirées des réalités du continent."
 	}
 };
 var contact$3 = {
@@ -2452,7 +2452,7 @@ var projects$2 = {
 	},
 	perso: {
 		type: "Personal project",
-		description: "Personal project in active development. Describe it here so recruiters can see your vision and motivation."
+		description: "Personal project in active development. It will be a digital platform dedicated to the valorization of African literature and stories inspired by the realities of the continent."
 	}
 };
 var contact$2 = {
@@ -2586,7 +2586,7 @@ var projects$1 = {
 	},
 	perso: {
 		type: "Projet perso",
-		description: "Projet personnel en développement actif. Décris-le ici pour que les recruteurs voient ta vision et ta motivation."
+		description: "Projet personnel en développement actif. Ce sera une plateforme numérique dédiée à la valorisation de la littérature africaine et des histoires inspirées des réalités du continent."
 	}
 };
 var contact$1 = {
@@ -2720,7 +2720,7 @@ var projects = {
 	},
 	perso: {
 		type: "Personal project",
-		description: "Personal project in active development. Describe it here so recruiters can see your vision and motivation."
+		description: "Personal project in active development. It will be a digital platform dedicated to the valorization of African literature and stories inspired by the realities of the continent."
 	}
 };
 var contact = {
@@ -3394,7 +3394,22 @@ _vdwLRMzvfgaMb4okN5tnHsIP59eyGfDbKJhr9SMUk,
 _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw
 ];
 
-const assets = {};
+const assets = {
+  "/index.mjs": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"2591c-vcGTYnfp3cj4Q0Eeb4l/qLopmUc\"",
+    "mtime": "2026-07-01T14:57:02.411Z",
+    "size": 153884,
+    "path": "index.mjs"
+  },
+  "/index.mjs.map": {
+    "type": "application/json",
+    "etag": "\"8218d-2qb25SV/cJIgwzniHmgHMLhYxg4\"",
+    "mtime": "2026-07-01T14:57:02.424Z",
+    "size": 532877,
+    "path": "index.mjs.map"
+  }
+};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));

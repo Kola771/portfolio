@@ -35,7 +35,7 @@ export const projects: Project[] = [
   {
     id: 'perso',
     name: 'Mon projet en cours',
-    tags: ['Nuxt 3', 'NestJS', 'TypeScript'],
+    tags: ['Next.js', 'NestJS', 'TypeScript', 'PostgreSQL', 'Redis'],
     status: 'wip',
     github: '#',
     demo: '#'
