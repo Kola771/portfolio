@@ -28,7 +28,7 @@
 
     <!-- Links -->
     <div class="card-links">
-      <a :href="project.github" target="_blank" rel="noopener" class="link">
+      <a v-if="project.github" :href="project.github" target="_blank" rel="noopener" class="link">
         <Icon name="tabler:brand-github" size="14" />
         Code
       </a>
@@ -172,7 +172,7 @@ const statusLabel = computed(() => t(`projects.status.${props.project.status}`))
 }
 
 .card-links {
-  display: none;
+  display: flex;
   gap: 1rem;
 }
 

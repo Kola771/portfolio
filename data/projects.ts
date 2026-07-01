@@ -14,30 +14,30 @@ export const projects: Project[] = [
     tags: ['Next.js', 'NestJS', 'TypeScript', 'PostgreSQL', 'Prisma'],
     status: 'wip',
     github: 'https://github.com/Kola771/twitter-clone',
-    demo: '#',
+    demo: '',
   },
   {
     id: 'airbnb-clone',
     name: 'Airbnb Clone',
     tags: ['Nuxt 3', 'NestJS', 'TypeScript', 'Prisma', 'Mapbox'],
     status: 'planned',
-    github: '#',
-    demo: '#'
+    github: '',
+    demo: ''
   },
   {
     id: 'shopify-clone',
     name: 'Shopify Clone',
     tags: ['Next.js', 'NestJS', 'TypeScript', 'Stripe', 'Redis'],
     status: 'planned',
-    github: '#',
-    demo: '#'
+    github: '',
+    demo: ''
   },
   {
     id: 'perso',
     name: 'Mon projet en cours',
     tags: ['Next.js', 'NestJS', 'TypeScript', 'PostgreSQL', 'Redis'],
     status: 'wip',
-    github: '#',
-    demo: '#'
+    github: '',
+    demo: ''
   },
 ]
