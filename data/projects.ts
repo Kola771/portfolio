@@ -21,7 +21,7 @@ export const projects: Project[] = [
     name: 'Airbnb Clone',
     tags: ['Nuxt 3', 'NestJS', 'TypeScript', 'Prisma', 'Mapbox'],
     status: 'planned',
-    github: 'https://github.com/Kola771/airbnb-clone',
+    github: '#',
     demo: '#'
   },
   {
@@ -29,7 +29,7 @@ export const projects: Project[] = [
     name: 'Shopify Clone',
     tags: ['Next.js', 'NestJS', 'TypeScript', 'Stripe', 'Redis'],
     status: 'planned',
-    github: 'https://github.com/Kola771/shopify-clone',
+    github: '#',
     demo: '#'
   },
   {
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     name: 'Mon projet en cours',
     tags: ['Nuxt 3', 'NestJS', 'TypeScript'],
     status: 'wip',
-    github: 'https://github.com/Kola771',
+    github: '#',
     demo: '#'
   },
 ]
